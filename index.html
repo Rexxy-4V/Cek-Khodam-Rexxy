@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam | by Rexxy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Cek Khodam</h1>
+        <p>Masukkan nama untuk mengetahui khodam</p>
+        <input type="text" id="nameInput" placeholder="Ketik nama kamu di sini">
+        <button onclick="cekKhodam()">Cek Khodam</button>
+        <div id="loading" class="loading-spinner" style="display: none;"></div>
+        <button onclick="resetForm()" style="margin-top: 20px;">Cek Lagi</button>
+        <div id="result">
+            <h2 id="khodamName"></h2>
+            <p id="khodamMeaning"></p>
+        </div>
+    </div>
+    <div class="footer">
+        © 2025 <a target="_blank">Rexxy</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
